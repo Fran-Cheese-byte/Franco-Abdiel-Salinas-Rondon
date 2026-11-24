@@ -1,16 +1,31 @@
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi página web | Franco Abdiel Salinas Rondon</title>
+    <!-- SEO -->
+    <title>Franco Abdiel Salinas Rondon | Ciencias de la Computación - UCSP</title>
 
-    <meta name="description" content="Portafolio académico de Franco Abdiel Salinas Rondon, estudiante de Ciencias de la Computación.">
+    <meta name="description"
+        content="Página personal de Franco Abdiel Salinas Rondon, estudiante de Ciencias de la Computación en la Universidad Católica San Pablo de Arequipa, Perú.">
+
     <meta name="author" content="Franco Abdiel Salinas Rondon">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
 
+    <!-- Redes sociales -->
+    <meta property="og:title"
+        content="Franco Abdiel Salinas Rondon | Portafolio académico">
+
+    <meta property="og:description"
+        content="Portafolio académico de Franco Abdiel Salinas Rondon, estudiante de Ciencias de la Computación en la UCSP.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
+
+    <!-- Estilos y JavaScript -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -23,30 +38,32 @@
         Tu navegador no puede reproducir este video.
     </video>
 
-    <!-- CAPA OSCURA -->
     <div class="capa-oscura"></div>
 
     <!-- ENCABEZADO -->
-    <header id="inicio" class="reveal">
+    <header id="inicio" class="encabezado">
+        <div class="contenido-encabezado reveal">
 
-        <h1>¡Hola! Soy Franco</h1>
+            <p class="subtitulo">PORTAFOLIO ACADÉMICO</p>
 
-        <p class="subtitulo">
-            Estudiante de Ciencias de la Computación
-        </p>
+            <h1>Franco Abdiel Salinas Rondon</h1>
 
-        <p>Primer semestre</p>
-        <p>Arequipa, Perú</p>
+            <p class="descripcion-principal">
+                Estudiante de Ciencias de la Computación
+                en la Universidad Católica San Pablo
+            </p>
 
-        <a class="boton" href="https://ucsp.edu.pe" target="_blank" rel="noopener noreferrer">
-            Mi universidad
-        </a>
+            <p class="ubicacion">Arequipa, Perú</p>
 
+            <a href="#sobre-mi" class="boton">
+                Conóceme
+            </a>
+
+        </div>
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-
+    <!-- NAVEGACIÓN -->
+    <nav class="navegacion">
         <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#companeros">Compañeros</a>
@@ -55,64 +72,85 @@
         <a href="#intereses">Intereses</a>
         <a href="#objetivos">Objetivos</a>
         <a href="#contacto">Contacto</a>
-
     </nav>
 
-    <main>
+    <main class="contenedor">
 
         <!-- SOBRE MÍ -->
-        <section id="sobre-mi" class="reveal">
+        <section id="sobre-mi" class="seccion reveal">
 
             <h2>Sobre mí</h2>
 
             <p>
                 Mi nombre es Franco Abdiel Salinas Rondon.
-                Soy estudiante de Ciencias de la Computación.
-                Me interesa aprender sobre programación,
-                tecnología y desarrollo de software.
+                Soy estudiante de primer semestre de Ciencias
+                de la Computación en la Universidad Católica
+                San Pablo (UCSP), ubicada en Arequipa, Perú.
             </p>
 
             <p>
-                Actualmente estoy comenzando mi formación
-                universitaria y busco desarrollar mis
-                conocimientos y habilidades.
+                Me interesa aprender sobre programación,
+                inteligencia artificial, desarrollo web
+                y nuevas tecnologías.
+            </p>
+
+            <p>
+                Este portafolio académico reúne información
+                sobre mi formación, mis intereses, mis
+                fortalezas y mis objetivos profesionales.
             </p>
 
         </section>
 
-        <!-- DATOS ACADÉMICOS -->
-        <section class="reveal">
+        <!-- INFORMACIÓN ACADÉMICA -->
+        <section class="seccion reveal">
 
-            <h2>Datos académicos</h2>
+            <h2>Información académica</h2>
 
             <div class="tarjetas">
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">🎓</span>
                     <h3>Universidad</h3>
                     <p>Universidad Católica San Pablo</p>
-                </div>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">💻</span>
                     <h3>Carrera</h3>
                     <p>Ciencias de la Computación</p>
-                </div>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">📚</span>
                     <h3>Semestre</h3>
-                    <p>Primer semestre</p>
-                </div>
+                    <p>Primero</p>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="icono">📍</span>
+                    <h3>Ubicación</h3>
+                    <p>Arequipa, Perú</p>
+                </article>
 
             </div>
+
+            <a href="https://ucsp.edu.pe"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="enlace-universidad">
+                Visitar Universidad Católica San Pablo
+            </a>
 
         </section>
 
         <!-- COMPAÑEROS -->
-        <section id="companeros" class="reveal">
+        <section id="companeros" class="seccion reveal">
 
             <h2>Mis compañeros</h2>
 
-            <p>
-                Presiona sus nombres para visitar sus páginas web.
+            <p class="texto-seccion">
+                Conoce las páginas personales de mis compañeros.
             </p>
 
             <div class="lista-companeros">
@@ -172,44 +210,33 @@
         </section>
 
         <!-- PROFESOR -->
-        <section id="profesor" class="reveal">
+        <section id="profesor" class="seccion reveal">
 
             <h2>Mi profesor</h2>
 
-            <div class="profesor-card">
+            <div class="tarjeta-profesor">
 
-                <a href="https://www.linkedin.com/in/ecuadrosv/"
-                   target="_blank" rel="noopener noreferrer">
-                    Ernesto Cuadros Vargas
-                </a>
+                <span class="icono">👨‍🏫</span>
+
+                <h3>Ernesto Cuadros Vargas</h3>
 
                 <p>
-                    Profesor de Ciencias de la Computación
+                    Profesor de la Universidad Católica San Pablo.
                 </p>
+
+                <a href="https://www.linkedin.com/in/ecuadrosv/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="boton">
+                    Ver perfil de LinkedIn
+                </a>
 
             </div>
 
         </section>
 
-        <!-- UNIVERSIDAD -->
-        <section class="reveal">
-
-            <h2>Mi universidad</h2>
-
-            <p>
-                Universidad Católica San Pablo (UCSP).
-            </p>
-
-            <a class="boton"
-               href="https://ucsp.edu.pe"
-               target="_blank" rel="noopener noreferrer">
-                Visitar UCSP
-            </a>
-
-        </section>
-
         <!-- FORTALEZAS -->
-        <section id="fortalezas" class="reveal">
+        <section id="fortalezas" class="seccion reveal">
 
             <h2>Mis fortalezas</h2>
 
@@ -230,107 +257,124 @@
         </section>
 
         <!-- INTERESES -->
-        <section id="intereses" class="reveal">
+        <section id="intereses" class="seccion reveal">
 
             <h2>Mis intereses</h2>
 
             <div class="tarjetas">
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">💻</span>
                     <h3>Programación</h3>
-                    <p>
-                        Aprender diferentes lenguajes y desarrollar programas.
-                    </p>
-                </div>
+                    <p>Desarrollo de software y algoritmos.</p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">🤖</span>
                     <h3>Inteligencia artificial</h3>
-                    <p>
-                        Conocer nuevas tecnologías y sus aplicaciones.
-                    </p>
-                </div>
+                    <p>Explorar nuevas tecnologías inteligentes.</p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">🌐</span>
                     <h3>Desarrollo web</h3>
-                    <p>
-                        Crear páginas y aplicaciones web.
-                    </p>
-                </div>
+                    <p>Creación de páginas y aplicaciones web.</p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">📊</span>
                     <h3>Ciencia de datos</h3>
-                    <p>
-                        Explorar información mediante herramientas computacionales.
-                    </p>
-                </div>
+                    <p>Análisis e interpretación de información.</p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">🔐</span>
                     <h3>Ciberseguridad</h3>
-                    <p>
-                        Aprender sobre seguridad informática.
-                    </p>
-                </div>
+                    <p>Seguridad y protección de sistemas.</p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
+                    <span class="icono">📐</span>
                     <h3>Matemáticas</h3>
-                    <p>
-                        Desarrollar el razonamiento lógico.
-                    </p>
-                </div>
+                    <p>Lógica y resolución de problemas.</p>
+                </article>
 
             </div>
 
         </section>
 
         <!-- OBJETIVOS -->
-        <section id="objetivos" class="reveal">
+        <section id="objetivos" class="seccion reveal">
 
             <h2>Mis objetivos</h2>
 
-            <p>
-                Mi objetivo es adquirir una buena base en
-                Ciencias de la Computación, mejorar mis
-                habilidades de programación y participar
-                en proyectos tecnológicos.
-            </p>
+            <div class="objetivos-lista">
+
+                <article>
+                    <h3>Objetivo académico</h3>
+                    <p>
+                        Desarrollar una sólida formación en
+                        Ciencias de la Computación y fortalecer
+                        mis conocimientos de programación.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Objetivo personal</h3>
+                    <p>
+                        Mejorar constantemente mis habilidades,
+                        aprender nuevas tecnologías y enfrentar
+                        nuevos desafíos.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Objetivo profesional</h3>
+                    <p>
+                        Convertirme en un profesional capaz de
+                        desarrollar soluciones tecnológicas
+                        innovadoras y útiles para la sociedad.
+                    </p>
+                </article>
+
+            </div>
 
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto" class="reveal">
+        <section id="contacto" class="seccion reveal">
 
             <h2>Contacto</h2>
 
-            <p>
-                ¡Puedes comunicarte conmigo a través de estos medios!
+            <p class="texto-seccion">
+                Puedes encontrarme a través de los siguientes medios.
             </p>
 
             <div class="contactos">
 
-                <!-- GMAIL -->
                 <a href="mailto:franco.salinas@ucsp.edu.pe"
                    class="contacto-item">
 
-                    <span class="icono-contacto">✉</span>
+                    <span class="icono">✉️</span>
 
-                    <div>
-                        <h3>Gmail institucional</h3>
-                        <p>franco.salinas@ucsp.edu.pe</p>
-                    </div>
+                    <span>
+                        <strong>Correo electrónico</strong>
+                        <small>franco.salinas@ucsp.edu.pe</small>
+                    </span>
 
                 </a>
 
-                <!-- LINKEDIN -->
                 <a href="https://www.linkedin.com/in/franco-abdiel-salinas-rondon-01ba77451/"
-                   class="contacto-item"
-                   target="_blank" rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contacto-item">
 
-                    <span class="icono-contacto">in</span>
+                    <span class="icono">💼</span>
 
-                    <div>
-                        <h3>LinkedIn</h3>
-                        <p>Mi perfil profesional</p>
-                    </div>
+                    <span>
+                        <strong>LinkedIn</strong>
+                        <small>Mi perfil profesional</small>
+                    </span>
 
                 </a>
 
@@ -341,15 +385,21 @@
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
-
-        <p>© 2026 Franco Abdiel Salinas Rondon</p>
+    <footer class="footer">
 
         <p>
-            Desarrollado con HTML, CSS y JavaScript.
+            © 2026 Franco Abdiel Salinas Rondon.
+            Todos los derechos reservados.
         </p>
+
+        <p>
+            Portafolio académico | Ciencias de la Computación
+        </p>
+
+        <a href="#inicio">Volver al inicio ↑</a>
 
     </footer>
 
 </body>
 </html>
+
